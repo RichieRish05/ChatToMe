@@ -15,7 +15,7 @@ class JSONTextSplitter:
             data = json.load(f)
             for item in data:
                 chunks.append(Document(
-                    page_content=f"Q: {item['question']}\nA: {item['answer']}",
+                    page_content=f"{item['question']}\n{item['answer']}",
                     metadata={"id": item['id'], "question": item['question'] }
                 ))
 

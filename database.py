@@ -58,6 +58,7 @@ def save_to_chroma(chunks: list[Document]):
     db = Chroma.from_documents(
         chunks, embeddings, persist_directory=CHROMA_PATH
     )
+    
     db.persist()
     print(f"Saved {len(chunks)} chunks to {CHROMA_PATH}.")
 
