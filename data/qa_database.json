@@ -1,0 +1,27 @@
+[
+  {
+    "id": "q1",
+    "question": "What\u2019s your background?",
+    "answer": "I\u2019m a computer science student at UC Irvine with a strong interest in machine learning, AI deployment, and full-stack app development."
+  },
+  {
+    "id": "q2",
+    "question": "How do you approach new coding projects?",
+    "answer": "I break them down into three parts: understand the core user need, map out the tech stack, and start with a small prototype that I can iterate on."
+  },
+  {
+    "id": "q3",
+    "question": "What\u2019s your experience with machine learning?",
+    "answer": "I\u2019ve built and deployed a custom PyTorch CNN to detect mood from audio spectrograms, with a feedback loop on AWS and a Flask-React frontend.",
+  },
+  {
+    "id": "q4",
+    "question": "What\u2019s the hardest bug you\u2019ve fixed recently?",
+    "answer": "A memory overflow when deploying my ML model to Render. I had to prune the model, optimize storage, and shift deployment strategy.",
+  },
+  {
+    "id": "q5",
+    "question": "How do you handle tight deadlines?",
+    "answer": "I prioritize core functionality, cut non-essential features, and communicate trade-offs clearly to keep the project on track.",
+  }
+]
