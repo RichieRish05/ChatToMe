@@ -7,6 +7,7 @@ import openai
 from dotenv import load_dotenv
 import os
 import shutil
+from custom_text_splitter import JSONTextSplitter
 
 # Load environment variables. Assumes that project contains .env file with API keys
 load_dotenv()
@@ -14,7 +15,7 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 
 
 CHROMA_PATH = "chroma"
-DATA_PATH = "data/"
+DATA_PATH = "data/qa_database.json"
 
 
 def main():
@@ -34,12 +35,7 @@ def load_documents():
 
 
 def split_text(documents: list[Document]):
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=300,
-        chunk_overlap=100,
-        length_function=len,
-        add_start_index=True,
-    )
+    text_splitter = JSONTextSplitter(DATA_PATH)
     chunks = text_splitter.split_documents(documents)
     print(f"Split {len(documents)} documents into {len(chunks)} chunks.")
 

@@ -1,4 +1,5 @@
 import json
+from langchain.docstore.document import Document
 
 
 class JSONTextSplitter:
@@ -8,12 +9,20 @@ class JSONTextSplitter:
 
 
     def split_text(self):
+        chunks = []
+
         with open(self.data_path, "r") as f:
             data = json.load(f)
-            chunks = [
-                f"Q: {item['question']}\nA: {item['answer']}"
-                for item in data
-            ]
+            for item in data:
+                chunks.append(Document(
+                    page_content=f"Q: {item['question']}\nA: {item['answer']}",
+                    metadata={"id": item['id'], "question": item['question'] }
+                ))
+
+
+
             return chunks
 
-            
+if __name__ == '__main__':
+    splitter = JSONTextSplitter('/Users/rishi/ChatToMe/data/qa_database.json')
+    print(splitter.split_text())
