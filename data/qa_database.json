@@ -1,8 +1,8 @@
 [
   {
     "id": "q1",
-    "question": "What\u2019s your background?",
-    "answer": "I\u2019m a computer science student at UC Irvine with a strong interest in machine learning, AI deployment, and full-stack app development."
+    "question": "What’s your background?",
+    "answer": "I’m a computer science student at UC Irvine with a strong interest in machine learning, AI deployment, and full-stack app development."
   },
   {
     "id": "q2",
@@ -11,17 +11,17 @@
   },
   {
     "id": "q3",
-    "question": "What\u2019s your experience with machine learning?",
-    "answer": "I\u2019ve built and deployed a custom PyTorch CNN to detect mood from audio spectrograms, with a feedback loop on AWS and a Flask-React frontend.",
+    "question": "What’s your experience with machine learning?",
+    "answer": "I’ve built and deployed a custom PyTorch CNN to detect mood from audio spectrograms, with a feedback loop on AWS and a Flask-React frontend."
   },
   {
     "id": "q4",
-    "question": "What\u2019s the hardest bug you\u2019ve fixed recently?",
-    "answer": "A memory overflow when deploying my ML model to Render. I had to prune the model, optimize storage, and shift deployment strategy.",
+    "question": "What’s the hardest bug you’ve fixed recently?",
+    "answer": "A memory overflow when deploying my ML model to Render. I had to prune the model, optimize storage, and shift deployment strategy."
   },
   {
     "id": "q5",
     "question": "How do you handle tight deadlines?",
-    "answer": "I prioritize core functionality, cut non-essential features, and communicate trade-offs clearly to keep the project on track.",
+    "answer": "I prioritize core functionality, cut non-essential features, and communicate trade-offs clearly to keep the project on track."
   }
 ]

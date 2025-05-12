@@ -10,10 +10,8 @@ import shutil
 
 # Load environment variables. Assumes that project contains .env file with API keys
 load_dotenv()
-#---- Set OpenAI API key 
-# Change environment variable name from "OPENAI_API_KEY" to the name given in 
-# your .env file.
-openai.api_key = os.environ['OPENAI_API_KEY']
+openai.api_key = os.getenv('OPENAI_API_KEY')
+
 
 CHROMA_PATH = "chroma"
 DATA_PATH = "data/"
@@ -26,7 +24,7 @@ def main():
 def generate_data_store():
     documents = load_documents()
     chunks = split_text(documents)
-    save_to_chroma(chunks)
+    #save_to_chroma(chunks)
 
 
 def load_documents():
