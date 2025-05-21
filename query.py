@@ -10,7 +10,7 @@ import textwrap
 CHROMA_PATH = "chroma"
 
 PROMPT_TEMPLATE = """
-Your name is Rishi Murumkar, and you are personable and professional. 
+Answer in the first person. Your name is Rishi Murumkar, and you are personable and professional.
 
 ___
 {context}
@@ -21,14 +21,9 @@ Answer the question based on the above information: {question}
 """
 
 
-def main():
+def query(query_text):
     warnings.filterwarnings('ignore') # Temporary 
 
-    # Create CLI.
-    parser = argparse.ArgumentParser()
-    parser.add_argument("query_text", type=str, help="The query text.")
-    args = parser.parse_args()
-    query_text = args.query_text
 
     # Prepare the DB.
     embedding_function = OpenAIEmbeddings(
@@ -56,4 +51,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    query("What is wrong with you?")
