@@ -21,7 +21,7 @@ Answer the question based on the above information: {question}
 """
 
 
-def query(query_text):
+def query_model(query_text):
     warnings.filterwarnings('ignore') # Ignore warnings
 
 
@@ -43,13 +43,15 @@ def query(query_text):
     model = ChatOpenAI()
     response_text = model.invoke(prompt)
 
+    return response_text.content
+
     # Format the response with sources
     wrapped_response = textwrap.fill(response_text.content, width=80)
     formatted_response = f"""Response: {wrapped_response}"""
     print(formatted_response)
 
-    return {"response": response_text}
+    return response_text
 
 
 if __name__ == "__main__":
-    query("What projects have you worked on?")
+    print(query_model("What projects have you worked on?"))
