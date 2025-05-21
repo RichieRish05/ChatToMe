@@ -9,6 +9,10 @@ app = FastAPI()
 class Question(BaseModel):
     text: str
 
+@app.get("/")
+async def hello():
+    return {"response": "Hello World!"}
+
 
 @app.post("/ask")
 async def ask(question: Question):
