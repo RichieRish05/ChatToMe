@@ -34,7 +34,6 @@ def query_model(query_text):
     # Search the DB.
     results = db.similarity_search_with_relevance_scores(query_text, k=3)
     
-
     
     context_text = "\n\n---\n\n".join([doc.page_content for doc, _score in results])
     prompt_template = ChatPromptTemplate.from_template(PROMPT_TEMPLATE)
@@ -45,13 +44,6 @@ def query_model(query_text):
 
     return response_text.content
 
-    # Format the response with sources
-    wrapped_response = textwrap.fill(response_text.content, width=80)
-    formatted_response = f"""Response: {wrapped_response}"""
-    print(formatted_response)
-
-    return response_text
-
 
 if __name__ == "__main__":
-    print(query_model("What projects have you worked on?"))
+    print(query_model("What do you like to do?"))
