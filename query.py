@@ -22,7 +22,7 @@ Answer the question based on the above information: {question}
 
 
 def query(query_text):
-    warnings.filterwarnings('ignore') # Temporary 
+    warnings.filterwarnings('ignore') # Ignore warnings
 
 
     # Prepare the DB.
@@ -44,11 +44,12 @@ def query(query_text):
     response_text = model.invoke(prompt)
 
     # Format the response with sources
-    sources = [doc.metadata.get("id", None) for doc, _score in results]
     wrapped_response = textwrap.fill(response_text.content, width=80)
-    formatted_response = f"""Response: {wrapped_response}\nSources: {', '.join(filter(None, sources))}"""
+    formatted_response = f"""Response: {wrapped_response}"""
     print(formatted_response)
+
+    return {"response": response_text}
 
 
 if __name__ == "__main__":
-    query("What is wrong with you?")
+    query("What projects have you worked on?")
