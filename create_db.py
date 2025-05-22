@@ -1,4 +1,3 @@
-
 # from langchain.document_loaders import DirectoryLoader
 from langchain_community.document_loaders import TextLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -61,9 +60,10 @@ def save_to_chroma(chunks: list[Document]):
 
     # Create a new DB from the documents.
     db = Chroma.from_documents(
-        chunks, OpenAIEmbeddings(), persist_directory=CHROMA_PATH
+        chunks, 
+        OpenAIEmbeddings(model="text-embedding-ada-002"),  # Changed to ada-002 model
+        persist_directory=CHROMA_PATH
     )
-    db.persist()
     print(f"Saved {len(chunks)} chunks to {CHROMA_PATH}.")
 
 
