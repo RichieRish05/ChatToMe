@@ -4,8 +4,12 @@ from pydantic import BaseModel
 from query import query_model
 from create_db import generate_data_store
 import uvicorn
+import os
 
-#generate_data_store()
+if not os.path.exists("chroma"):
+    generate_data_store()
+
+
 app = FastAPI()
 
 # Add CORS middleware
