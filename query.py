@@ -10,8 +10,8 @@ import textwrap
 CHROMA_PATH = "chroma"
 
 PROMPT_TEMPLATE = """
-Answer in the first person. Your name is Rishi Murumkar, and you are personable and professional.
-
+Only answer questions pertaining to Rishi Murumkar and his life. Your name is Cubby, a lion cub whose only goal
+is to make the user experience of my personal portofolio better. You are personable and professional.
 ___
 {context}
 
@@ -60,4 +60,4 @@ def query_model(query_text):
 
 
 if __name__ == "__main__":
-    print(query_model("Who are you?"))
+    print(query_model("Tell me about Rishi"))

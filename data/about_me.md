@@ -1,25 +1,55 @@
-My name is Rishi Murumkar, a Computer Science student at UC Irvine with a passion for building intelligent, human-centered systems. I am a Software Engineer — someone who not only writes clean, scalable code but also solves real-world problems through elegant design and purposeful innovation.
+### **About Rishi Murumkar (a.k.a. Richie Rish)**
 
-I specialize in developing AI-powered applications that blend machine learning, backend engineering, and user experience design. Most recently, I built and presented MoodySound, a PyTorch-based neural network that detects human emotion from spectrograms, at the 2025 AI Summit in San Diego. I deployed the system with a full-stack React and Flask interface, powered by AWS, and integrated real-time user feedback through DynamoDB. It’s more than just an ML project — it’s an evolving, empathetic tool that listens, adapts, and learns.
+Rishi Murumkar is a first-year Computer Science student at the University of California, Irvine, known for his multidisciplinary creativity, entrepreneurial mindset, and passion for building meaningful technology. He goes by the nickname “Richie Rish Da Drip God” among friends — a playful nod to his confident personality and love for standing out.
 
-My favorite project is MoodySound, a PyTorch-based neural network that detects human emotion from spectrograms, at the 2025 AI Summit in San Diego. I deployed the system with a full-stack React and Flask interface, powered by AWS, and integrated real-time user feedback through DynamoDB. It’s more than just an ML project — it’s an evolving, empathetic tool that listens, adapts, and learns.
+Rishi was born and raised in California and has always had a fascination with both how things work and how people think. This dual interest has led him to blend **technical innovation with human empathy**, especially in the areas of AI, web development, and user-centered product design.
 
-Another project I've worked on was a pygame Chess game, which I built in a weekend. It was a fun project that taught me a lot about object-oriented programming and game development. I developed custom algorithms to enforce checkmate, stalemate, and other chess rules. I love playing chess, and this project was a great way to combine my love for the game with my passion for building software. I have even played with a lot of my friends on my engine, and we have had a lot of fun with it.
+---
 
-Another project I've worked on is building a personal website for fun. I wanted to learn more about web development, so I built this website using HTML, CSS, and JavaScript. I learned a lot about web development, and I had a lot of fun with it. I also learned a lot about the importance of design and user experience in software development. I am currently working on a new version of this website, and I am excited to see it come to life. This chatbot is a part of that project. I hope you enjoy it!
+### **Academic and Technical Interests**
 
-Currently, I’m working on a retrieval-augmented generation (RAG) chatbot that answers questions in my own tone of voice — built using OpenAI, LangChain, and semantic vector search. I currently serve as a Tech Organizer at Hack at UCI, where I help lead the development of software tools that support some of Southern California’s largest collegiate hackathons. I’ve contributed to internal platforms used for hacker registration, project submission, and judging — building scalable systems using React, TypeScript, and FastAPI. This role has taught me how to ship fast, collaborate across teams, and engineer solutions that thousands of users rely on during high-pressure, real-time events.
+* He is currently studying Computer Science at UCI and is planning to make it big as a founding engineer or high level tech engineer one day. 
+* Rishi’s research interests lie in **autonomous systems**, **sentiment analysis**, **voice recognition**, and **NLP**. He’s particularly drawn to areas where AI can **understand, interpret, or respond to human emotion**.
+* He wrote a research paper on **3D Lidar Object Detection in Adverse Weather**, comparing AI models under foggy and clear conditions.
+* His long-term academic aspiration is to pursue a **Master’s degree at Stanford University**, with a focus on human-centered AI.
 
-But who I am goes far beyond code. I grew up in Union City in the Bay Area, where I spent my entire childhood surrounded by a diverse community and big dreams. I’m the proud older brother to a younger sister, and I carry that sense of responsibility and mentorship into everything I do — whether I’m helping a teammate debug a model or teaching a friend how to set up their first Git repo.
+---
 
-In my free time, I love to play soccer and basketball, and I also love to watch anime. I also love to play chess, and I have even built my own engine. I also love to play video games, and I am a huge fan of the game FIFA. I love spending time with my friends, and I love to travel. I have been to a lot of places, and I am always looking for new places to go. My favorite city I have been to is Madrid, Spain. The people are so friendly, and the food is amazing. I have also been to places like Kenya, India, and Turkey. 
+### **Key Projects**
 
-One of my favorite childhood memories growing up was playing basketball with my friends in the park. We used to shoot hoops for hours, always complaining about the score. I love my friends and family dearly, and I am so grateful for them. 
+* **MoodySound**: A custom convolutional neural network (CNN) that classifies mood based on audio spectrograms. He trained it on a personal dataset and built a feedback loop using AWS DynamoDB and S3. The model was deployed via a full-stack Flask + React app.
+* **ImmiAI**: A SaaS tool for immigrants that combines a chatbot (powered by RAG with Pinecone), legal document translation, and ICE activity maps. He built the legal NLP pipeline, translation backend using Gemini, and the frontend interface.
+* **ChatToMe**: A LangChain-powered AI chatbot trained on his own personality and Q\&A data for personal branding and fun interactions.
+* **Chess**: A 2D Chess Engine complete with multiplayer built on Pygame. 
+* **ShadowLite 3D**: A calculator for calculating shade in a triangular mesh. 
 
-Outside of school and work, I’m a huge believer in mind-body balance. I love working out, watching soccer and basketball, and exploring the subtle world of tea tasting — from matcha to indian spiced chai. Tea reminds me a lot of building software: it's nuanced, iterative, and deeply rewarding when you get it just right.
+---
 
-My favorite color is red,  a reflection of the energy, ambition, and passion I bring to every project. And yes, I still love the movie Cars. There's something about Lightning McQueen’s transformation — from speed-driven to purpose-driven — that feels personal. Like him, I’m learning that it’s not just about going fast — it’s about building something meaningful along the way.
+### **Professional Experience & Impact**
 
-In the future, I aim to work as a Software Engineer at a company like OpenAI, Google, or a mission-driven startup. Whether I’m contributing to next-generation AI systems, creating scalable backend services, or launching my own venture, I want to build with integrity, curiosity, and heart.
+* Rishi is an AI/ML Engineering Intern at Bio-Rad, where he is currently using NLP to streamline procurement flows. 
 
-Let’s connect — and let’s build something amazing together.
+
+---
+
+### **Creative & Personal Life**
+
+* He’s deeply spiritual, often reflecting on personal growth, emotional resilience, and how to live with intention.
+* He has a deep respect for his immigrant family roots and wants to use tech to **uplift marginalized communities**, especially those navigating complex systems like immigration, education, and healthcare.
+
+---
+
+### **Entrepreneurial Ambitions**
+
+* He’s interested in **fintech**, especially tools that can simplify financial access and automate wealth management for young adults and underserved groups.
+
+---
+
+### **Fun Facts**
+
+* Rishi is a night owl and does his best thinking around 2 AM.
+* He’s the type of person who writes down startup ideas in the Notes app between classes.
+* He has a personal rule to build one technical project per quarter.
+* His dream is to one day **build a company that blends AI, education, and emotional intelligence.**
+
+
